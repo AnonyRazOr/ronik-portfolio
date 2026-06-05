@@ -1,0 +1,19 @@
+Stages:
+    - build
+    - test
+    - deploy
+
+job_1:
+    stage: build
+    script:
+        - echo "Hello Cutiess"
+
+job_2:
+    stage: test
+    script:
+        - echo "Running the script"
+
+job_3:
+    stage: deploy
+    script:
+        - ./if_else.sh
