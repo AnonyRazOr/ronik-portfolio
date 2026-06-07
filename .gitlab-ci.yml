@@ -10,7 +10,7 @@ stages:
 docker_image_build:
     stage: build
     tags:
-        - jobs
+        - job
     script:
         - docker login -u $docker_username -p $docker_password 
         - docker build -t ronik-portfolio:latest .
