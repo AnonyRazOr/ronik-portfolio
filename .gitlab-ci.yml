@@ -5,7 +5,7 @@ stages:
 docker_image_build:
     stage: build
     script:
-        - docker login -u $docker_usermame -p $docker_password 
+        - docker login -u $docker_username -p $docker_password 
         - docker build -t ronik-portfolio:latest .
 
 docker_run:
