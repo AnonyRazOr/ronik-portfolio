@@ -18,7 +18,7 @@ docker_image_build:
 docker_image_run:
     stage: run
     script:
-        - docker compose up -d
+        - docker run -p 80:80 -d ronik-portfolio:latest
 
 
 
