@@ -14,8 +14,7 @@ docker_image_build:
         - docker build -t ronik-portfolio:latest .
         - docker images
         - docker run -p 80:80 -d ronik-portfolio:latest
-    tags:
-    - moho
+    
 
 
 
