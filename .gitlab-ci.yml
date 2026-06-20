@@ -18,6 +18,7 @@ docker_image_build:
 docker_image_run:
     stage: run
     script:
+        - docker kill $(docker ps -q)
         - docker run -p 80:80 -d ronik-portfolio:latest
 
 
